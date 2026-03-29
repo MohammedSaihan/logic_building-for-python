@@ -2,21 +2,21 @@
 
 numbers = [1, 2, 2, 3, 3, 3, 4, 4]
 
-def frequency(numbers):
-    freq = {}
-    maxi = None
+def most_freq(numbers):
+    fre1 = {}
+    max = 0
 
-    for n in numbers:
-        if n in freq:
-            freq[n] +=1
+    for num in numbers:
+        if num in fre1:
+            fre1[num] +=1
         else:
-            freq[n] = 1
+            fre1[num] = 1
 
-        if maxi is None or freq[n] > freq[maxi]:
-            maxi = n
-    return maxi
+        if fre1[num] > max:
+            max = fre1[num]
+
+    return max
 
 
-result = frequency(numbers)
-
+result = most_freq(numbers)
 print(result)
