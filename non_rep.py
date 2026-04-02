@@ -2,8 +2,7 @@ numbers = [2, 3, 4, 2, 3, 5, 6]
 
 def non_rep(numbers):
     freq = {}
-    non = None
-
+ 
     for num in numbers:
         if num in freq:
             freq[num] +=1
